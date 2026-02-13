@@ -1,0 +1,1 @@
+print(int(input("mass\n"))*90000000000000000)
