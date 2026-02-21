@@ -1,1 +1,1 @@
-print(int(input("mass\n"))*90000000000000000)
+print(int(input("mass (Kg)\n"))*90000000000000000)# prints e = mc^2 where c = 300000000

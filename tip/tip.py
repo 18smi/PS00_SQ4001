@@ -6,11 +6,13 @@ def main():
 
 
 def dollars_to_float(d):
-    return int(d[1])*10 + int(d[2]) + int(d[4])*0.1 + int(d[5])*0.01
+    return int(d.replace('$', '').replace('.', '')) * 0.01
+    # uses the asumption of the format $xx.xx to convert the str to a float
 
 
 def percent_to_float(p):
-    return int(p[0])*0.1 + int(p[1])*0.01
+    return int(p.replace('%', ''))*0.01
+    # returns the string withou the '%' * 0.01 as a float
 
 
 main()
